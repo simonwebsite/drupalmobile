@@ -1,0 +1,74 @@
+ /**
+ *	Feuille de style CSS des MediaQueries site Univ
+ *		Résolution particulière : 480x767px;
+ *				+
+ *		Feuille de style pour résolution définie
+ *		
+ *
+ *	Auteur : Vincent B. & Simon C.;
+ */
+ 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  	.container {
+    		width:90%;
+    		margin: 0 auto;
+  	}
+
+  	/* Block des langues de droite */
+  	#block-locale .content
+  	{
+  		display: none;
+  	}
+
+  	/* Block vidÃ©o de droite */
+  	#banniere-right {
+  		display: none;
+  	}
+  	#banniere-right .block {
+  		display: none;
+  	}
+
+  	/* Block qui contient la banniÃ¨re */
+	.span-18 {
+  		width:100%;
+  	}
+
+
+
+	/* Menu déroulant des différentes entitées */
+	.menu_header_deroulant, .menu_header_icone{
+		display: none;
+			
+	}
+
+
+	/* Liens des accès directs */
+	#acces_direct { 
+		position: absolute;
+    	top: 15px;
+    	width: 89%;
+	}
+	#acces_direct span { 
+			
+	}
+	#acces_direct ul {
+			
+	}
+	/***** FIN LIens des accès directs */
+	
+	
+	
+	
+  	/* Block du menu horizontal gÃ©nÃ©ral */
+  	#primary {
+  		font-size:10px;
+  	}
+  	
+  	
+  	/* Block des contenus de page d'accueil */
+  	.span-6  {
+  		margin: 10px;
+    	width: 45%;	
+  	}
+
+}

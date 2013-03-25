@@ -1,0 +1,38 @@
+/*
+ * wysiwyg.css
+ * ------------------
+ * Fichier des définition des styles utilisables dans TinyMCE
+ * Espace de nommage (univ-***) à respecter et à définir en backoffice
+ */
+
+body#tinymce.mceContentBody {
+  color: #000;
+  font: 80% Tahoma, Verdana, sans-serif;
+}
+
+.univ-vert{
+	color: #8daf31;
+}
+
+.univ-citation{
+	
+}
+
+body#tinymce h4, body#tinymce h5, body#tinymce h6 {
+	font-weight: bold;
+	font-family: 'century gothic', 'Questrial', Tahoma, sans-serif;
+}
+
+body#tinymce h4 {
+	font-size: 140%;
+	color: #606060;
+}
+
+body#tinymce h5 {
+	font-size: 120%;
+	color: #606060;
+}
+body#tinymce h6 {
+	font-size: 100%;
+	color: #606060;
+}

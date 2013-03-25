@@ -1,0 +1,100 @@
+/*
+ * drupal.css
+ * ------------------
+ * Fichier de définition de styles system de drupal
+ */
+
+/* block system */
+.block {margin-bottom:10px;}
+
+/* system messages */
+.messages {
+  margin: 10px 0;
+  min-height: 40px;
+  padding: 15px 15px 15px 70px;
+}
+
+.messages.status {
+    border: 1px solid #95C7FC;
+    color: #3181CD;
+    background: url("../img/icons/info.png") no-repeat scroll 20px 20px #DFF0FF;
+}
+
+.messages.error {
+    background: url("../img/icons/favorite.png") no-repeat scroll 20px 20px #FDF1EE;
+    border: 1px solid #ECB8B0;
+    color: #D0583F;
+}
+
+.messages.warning {
+    background: url("../img/icons/alert.png") no-repeat scroll 20px 20px #FFFCF0;
+    border: 1px solid #E1B42F;
+    color: #E1B42F;
+}
+
+.messages.ok {
+    background: url("../img/icons/announcement.png") no-repeat scroll 20px 20px #F0F8EE;
+    border: 1px solid #6CB656;
+    color: #6CB656;
+}
+
+.help {
+    margin: 10px 0;
+    padding: 15px 15px 15px 70px;
+    background: url("../img/icons/help.png") no-repeat scroll 20px 20px #F5F5F5;
+    border: 1px solid #DDDDDD;
+      min-height: 40px;
+}
+
+/* system tabs */
+.tabs {overflow: hidden;}
+ul.tabs {
+    border-bottom: 1px solid #BBBBBB;
+    border-collapse: collapse;
+    line-height: normal;
+    list-style: none outside none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    white-space: nowrap;
+}
+ul.tabs li {float: left;padding: 0;}
+ul.tabs li a {
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 5px 11px;
+    margin: 0 3px 0 0;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+ul.tabs li a:hover {text-decoration: none;background: #fff;}
+ul.tabs li a:link, ul.tabs li a:visited {color:#369}
+ul.tabs li a.active, ul.tabs li.active a {background-color: #fff;}
+
+ul.subtabs {margin-bottom: 10px;}
+ul.subtabs li {float: left;padding: 0;}
+ul.subtabs li a {
+    background:#336699;
+    display: inline-block;
+    padding: 5px 11px;
+    margin: 0 3px 0 0;
+    color: #fff;
+}
+ul.subtabs li a.active, ul.subtabs li.active a {background-color: #f96503; color:#fff}
+ul.subtabs li a.active:hover, ul.subtabs li.active a:hover {background-color: #f96503; color:#fff}
+ul.subtabs li a:hover {text-decoration: none;background: #39c;}
+
+/* table */
+#wrapper-content table {width: 100%;}
+#wrapper-content table tr td {padding: 0.5em;}
+
+/* fieldset */
+#wrapper-content fieldset {padding: 10px; margin: 0 0 10px 0}
+
+/* book */
+#book-outline {min-width: 0;}
+
+/* teaser */
+.teaser-checkbox {
+    display: none;
+}

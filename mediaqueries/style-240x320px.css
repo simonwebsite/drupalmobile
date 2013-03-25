@@ -1,0 +1,52 @@
+ /**
+ *	Feuille de style CSS des MediaQueries site Univ
+ *		Résolution particulière : 240x320px;
+ *				+
+ *		Feuille de style pour résolution définie
+ *		
+ *
+ *		Auteur : Yeu LY
+ */
+ 
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  	#header {
+	    height: 350px;
+	    border: 1px solid black;
+	}
+	.menu_header_deroulant ul li span {
+	    border-bottom: 1px dotted #FFFFFF;
+	    font-size: 12px;
+	}
+	.span-6 {
+	    margin-left: -246px;
+	    margin-top: 126px;
+	    width: 240px;
+	}
+	#banniere h1 {
+	    background-color: rgba(0, 0, 0, 0.4);
+	    color: #FFFFFF;
+	    font-size: 1.5em;
+	    font-weight: bold;
+	    margin: -328px 351px 0;
+	    position: absolute;
+	    width: 106px;
+	    z-index: 2;
+	}
+	.menu_header_icone {
+	    padding-left: 190px;
+	    width: 100px;
+	}
+	.menu_header_deroulant, .menu_header_icone {
+	    color: #FFFFFF;
+	    float: left;
+	    font-size: 12px;
+	    width: 240px;
+	}
+	.menu_header_icone {
+	    border: 1px solid black;
+	    margin-left: 153px;
+	    margin-top: 12px;
+	    padding-left: 0;
+	    width: 83px;
+	}
+}

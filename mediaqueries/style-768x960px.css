@@ -1,0 +1,18 @@
+ /**
+ *	Feuille de style CSS des MediaQueries site Univ
+ *		Résolution particulière : 768x960px;
+ *				+
+ *		Feuille de style pour résolution définie
+ *		
+ *
+ *		Auteur :
+ */
+ 
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  	.container {
+    		width:90%;
+    		margin: 0 auto;
+  	}
+	/* Rajouter les propriétés CSS ici */
+
+}
