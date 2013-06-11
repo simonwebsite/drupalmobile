@@ -1,18 +1,91 @@
- /**
+  /**
  *	Feuille de style CSS des MediaQueries site Univ
  *		Résolution particulière : 768x960px;
  *				+
  *		Feuille de style pour résolution définie
  *		
  *
- *		Auteur :
+ *		Auteur : Alexandre R. John C.
  */
  
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  	.container {
-    		width:90%;
-    		margin: 0 auto;
-  	}
-	/* Rajouter les propriétés CSS ici */
+    .container 
+    {
+        width:90%;
+        margin: 0 auto;
+    }
 
+    #banniere
+    {
+        background: url("http://localhost/SiteUniversite/sites/all/themes/univ-general/css/../img/bandeau_bg3.jpg") no-repeat 0 0 #0F1217;
+    } 
+
+    /* On règle le zindex pour que le menu passe par dessus le logo */
+    #acces_composantes 
+    {
+        z-index:999 !important;
+    }
+
+    .menu_header_icone 
+    {
+        margin-top: -30px;
+    }
+
+    /* Liens des accès directs */
+    #acces_direct 
+    { 
+        position: absolute;
+        top: 25px;
+        width: 89%;
+    }
+
+    /* Block des langues de droite */
+    #block-locale .content
+    {
+        display: none;
+    }
+
+    /* Block vidéo de droite */
+    #banniere-right 
+    {
+        display: none;
+    }
+    #banniere-right .block 
+    {
+        display: none;
+    }
+
+    /* Block qui contient la bannière */
+    .span-18 
+    {
+        width:100%;
+    }
+
+    /* Block : histoire de l'université + le mot du président */
+    .composite-twocol .composite-column 
+    {
+        float: left;
+        position: relative;
+        width: auto;
+    }
+    .content 
+    {
+        height:auto;
+        text-align: justify;
+    }
+
+    /* Propriétés des blocs du footer de droite */
+    #footer-right 
+    {
+        margin: 20px;
+        width: 93%;
+    }
+
+    /* Block des contenus de page d'accueil */
+    .footer-block
+    {
+        margin: 5px;
+        width: 45%;
+        margin-left: 20px;   
+    }
 }
