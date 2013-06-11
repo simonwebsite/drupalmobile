@@ -1,74 +1,100 @@
  /**
- *	Feuille de style CSS des MediaQueries site Univ
- *		Résolution particulière : 480x767px;
- *				+
- *		Feuille de style pour résolution définie
- *		
+ *  Feuille de style CSS des MediaQueries site Univ
+ *    Résolution particulière : 480x767px;
+ *        +
+ *    Feuille de style pour résolution définie
+ *    
  *
- *	Auteur : Vincent B. & Simon C.;
+ *    Auteur : Vincent BLEE || Simon CHAUVIN
  */
- 
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  	.container {
-    		width:90%;
-    		margin: 0 auto;
-  	}
+      .container 
+      {
+            width:90%;
+            margin: 0 auto;
+      }
+      
 
-  	/* Block des langues de droite */
-  	#block-locale .content
-  	{
-  		display: none;
-  	}
+      /* Liens des accès directs */
+      #acces_direct 
+      { 
+          position: absolute;
+          top: 25px;
+          width: 89%;
+      }
+      .menu_header_icone 
+      {
+          margin-top: -30px;
+      }
 
-  	/* Block vidÃ©o de droite */
-  	#banniere-right {
-  		display: none;
-  	}
-  	#banniere-right .block {
-  		display: none;
-  	}
-
-  	/* Block qui contient la banniÃ¨re */
-	.span-18 {
-  		width:100%;
-  	}
-
-
-
-	/* Menu déroulant des différentes entitées */
-	.menu_header_deroulant, .menu_header_icone{
-		display: none;
-			
-	}
+      /* Menu déroulant des différentes entitées */
+    	.menu_header_deroulant
+      {
+        	margin: 0;
+        	padding: 0;	
+    	}
+    	.menu_header_deroulant ul li span 
+      {
+    		  font-size:11px; /* On réduit la taille du menu déroulant du header */
+    	}
 
 
-	/* Liens des accès directs */
-	#acces_direct { 
-		position: absolute;
-    	top: 15px;
-    	width: 89%;
-	}
-	#acces_direct span { 
-			
-	}
-	#acces_direct ul {
-			
-	}
-	/***** FIN LIens des accès directs */
-	
-	
-	
-	
-  	/* Block du menu horizontal gÃ©nÃ©ral */
-  	#primary {
-  		font-size:10px;
-  	}
-  	
-  	
-  	/* Block des contenus de page d'accueil */
-  	.span-6  {
-  		margin: 10px;
-    	width: 45%;	
-  	}
 
+      /* On règle le zindex pour que le menu passe par dessus le logo */
+      #acces_composantes 
+      {
+          z-index:999 !important;
+      }
+
+          
+      /* Block des langues de droite */
+      #block-locale .content
+      {
+          display: none;
+      }
+
+      /* Block vidÃ©o de droite */
+      #banniere-right 
+      {
+          display: none;
+      }
+      #banniere-right .block 
+      {
+          display: none;
+      }
+
+      /* Block qui contient la banniÃ¨re */
+      .span-18 
+      {
+          width:100%;
+      }
+
+      /* Block : histoire de l'université + le mot du président */
+      .composite-twocol .composite-column 
+      {
+          float: left;
+          position: relative;
+          width: auto;
+      }
+      .content 
+      {
+          height:auto;
+          text-align: justify;
+      }
+      
+      /* Propriétés des blocs du footer de droite */
+      #footer-right 
+      {
+          margin: 10px;
+          width: 95%;
+      }
+      
+      /* Block des contenus de page d'accueil */
+      .footer-block
+      {
+          margin: 5px;
+          width: 45%;
+          margin-left: 20px;   
+      } 
 }
