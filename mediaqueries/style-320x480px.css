@@ -1,18 +1,137 @@
- /**
+/**
  *	Feuille de style CSS des MediaQueries site Univ
  *		Résolution particulière : 320x480px;
  *				+
  *		Feuille de style pour résolution définie
  *		
  *
- *		Auteur :
+ *		Auteur : Romain Dellinger || Thomas Belleville || Yeu Ly
  */
  
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  	.container {
-    		width:90%;
-    		margin: 0 auto;
+  	.container 
+  	{
+		width:90%;
+		margin: 0 auto;
+		position:relative;
   	}
-	/* Rajouter les propriétés CSS ici */
+
+  	/* Block des langues de droite, on le retire */
+  	#block-locale .content
+  	{
+  		display: none;
+  	}
+	
+	/* Block de menu de droite qu'on met au bas de la page*/
+	#banniere-right 
+	{
+		display:none;
+	}
+	/* Block de profil ( avec menu de recherche) que l'on enleve  */
+	#block-profil 
+	{
+		display:none;
+	}
+
+  	/* Block qui contient la bannière+différents menus */
+	.span-18 
+	{
+  		width:100%;
+  	}
+
+
+	/* Menu déroulant des différentes entitées */
+	.menu_header_deroulant, .menu_header_icone
+	{
+		display: none;		
+	}
+
+
+	/* Liens des accès directs */
+	#acces_direct 
+	{ 
+		position: absolute;
+    	top: 0px;
+    	width: 100%;
+		font-size:10px;
+	}
+
+	/***** FIN LIens des accès directs */
+	
+	
+	#block-directaccess 
+	{
+		display:none;	
+	}
+	
+  	/* Block du menu horizontal gÃ©nÃ©ral */
+  	#primary 
+  	{
+  		font-size:18px;
+	
+  	}
+  	/* DEBUT Liens de navigation du site*/
+  	#primary li 
+  	{
+  		width:90%;
+		text-align:center;
+		background-color:gray;
+		height:25px;
+		border:none;
+  	}
+	#primary .menu li 
+	{
+		border:1px solid black;
+		padding-top:5px;
+	}
+	#primary .menu li.last 
+	{
+		border:1px solid black;
+	}
+	#primary .menu li.first 
+	{
+		display:none;
+	}
+
+/* FIN des liens de naviation du site */
+
+
+  	/* Block des contenus de page d'accueil */
+  	.span-6  
+  	{
+  		margin: 10px;
+	}
+	/*Texte de la bannière */
+	#banniere h1 
+	{
+		position: absolute;
+		margin: 92px 0 0 0;
+		padding-left:25px;
+		width: 60%;
+		color: #ffffff;
+		font-size: 1.5em;
+		z-index: 2;
+		background-color: none;
+		font-weight: bold;
+	}
+
+	/* Taille du texte du footer */
+	#footer-menu 
+	{
+		font-size:11px;
+	}
+
+	/* Mise en place des articles sur la largeur de l'ecran*/
+	.composite-twocol .composite-column 
+	{
+		width: 100%;
+	}
+
+	/* Mise en place des block d'actualités*/
+	.footer-block 
+	{
+		margin-bottom:6px;
+		width:90%;
+	}
 
 }
